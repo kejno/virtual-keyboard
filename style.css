@@ -1,0 +1,95 @@
+.keyboard{
+    display: flex;
+    max-width: 50vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: rgb(20, 130, 220);
+}
+.wrapper{
+    text-align: center;
+}
+.input{
+    width: 50vw;
+    height: 10vw;
+    margin-bottom: .35vw;
+    
+}
+.item{
+    display: flex;
+    justify-content: center;
+    margin: .35vw .25vw;
+    border-radius: .3vw;
+    width: 2.7vw;
+    height:2.7vw;
+    background-color: rgb(0, 109, 211);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    cursor: pointer;
+    box-shadow:0 0 7px black;
+    transition: all .3s ease-in-out;
+}
+.rus, .eng{
+    display: flex;
+    align-items: center;  
+}
+.key{
+    line-height: 3vw;
+}
+.keyboard-info{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+
+.item:nth-child(14){
+    width: 7.9vw;
+}
+.item:nth-child(15){
+    width: 3.7vw;
+}
+.item:nth-child(29){
+    width: 3.7vw;
+}
+.item:nth-child(30){
+    width: 7.9vw;
+}
+.item:nth-child(42){
+    width: 5.9vw;
+}
+.item:nth-child(43){
+    width: 7.9vw;
+}
+.item:nth-child(55){
+    width: 5.9vw;
+}
+
+.item:nth-child(56){
+    width: 4.6vw;
+}
+.item:nth-child(58){
+    width: 3.6vw;
+}
+.item:nth-child(59){
+    width: 20.1vw;
+}
+.item:nth-child(60){
+    width: 3.7vw;
+}
+.item:nth-child(64){
+    width: 2.7vw;
+}
+
+
+.hidden{
+    display: none;
+}
+.hover{
+    background-color: rgb(0, 0, 114);
+}
+.push{
+    background-color: rgb(20, 130, 220);
+    box-shadow: none;
+}
