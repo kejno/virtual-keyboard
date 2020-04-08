@@ -99,11 +99,43 @@ for (let i = 0; i < item.length; i++) {
                 }
                 else textarea.value += rusEng.children[1].innerHTML
             }
+            else if (event.currentTarget.classList[1] == 'Enter') {
+                textarea.value += '\n'
+            }
+            else if (event.currentTarget.classList[1] == 'Tab') {
+                textarea.value += '\t'
+            }
+
         }
+        if (event.currentTarget.classList[1] == 'CapsLock' || event.currentTarget.classList[1] == 'ShiftLeft') {
+
+            for (let i = 0; i < item.length; i++) {
+                let k = 0;
+                while (k < 2) {
+                    eng[i].children[k].classList.toggle('hidden');
+                    rus[i].children[k].classList.toggle('hidden');
+                    k++;
+                }
+            }
+        }
+
+
 
     }
     item[i].onmouseup = (event) => {
         event.currentTarget.classList.remove('push')
+
+        if (event.currentTarget.classList[1] == 'ShiftLeft') {
+
+            for (let i = 0; i < item.length; i++) {
+                let k = 0;
+                while (k < 2) {
+                    eng[i].children[k].classList.toggle('hidden');
+                    rus[i].children[k].classList.toggle('hidden');
+                    k++;
+                }
+            }
+        }
     }
 }
 
