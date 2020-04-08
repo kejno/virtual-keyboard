@@ -27,7 +27,7 @@
     font-weight: 550;
     cursor: pointer;
     box-shadow:0 0 7px black;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
 }
 .rus, .eng{
     display: flex;
@@ -92,4 +92,6 @@
 .push{
     background-color: rgb(20, 130, 220);
     box-shadow: none;
+    color: #000000;
+    font-size: 24px;
 }
