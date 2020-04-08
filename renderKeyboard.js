@@ -83,15 +83,15 @@ let item = document.querySelectorAll('.item');
 
 for (let i = 0; i < item.length; i++) {
 
-    item[i].classList[1] == 'ArrowUp' ? item[i].innerHTML = '<span class="key">▲</span>' : null;
-    item[i].classList[1] == 'ArrowDown' ? item[i].innerHTML = '<span class="key">▼</span>' : null;
-    item[i].classList[1] == 'ArrowLeft' ? item[i].innerHTML = '<span class="key">◄</span>' : null;
-    item[i].classList[1] == 'ArrowRight' ? item[i].innerHTML = '<span class="key">►</span>' : null;
-    item[i].classList[1] == 'AltRight' ? item[i].innerHTML = '<span class="key">Alt</span>' : null;
-    item[i].classList[1] == 'ControlLeft' ? item[i].innerHTML = '<span class="key">Ctrl</span>' : null;
-    item[i].classList[1] == 'ControlRight' ? item[i].innerHTML = '<span class="key">Ctrl</span>' : null;
-    item[i].classList[1] == 'Meta' ? item[i].innerHTML = '<span class="key">Win</span>' : null;
-    item[i].classList[1] == 'Space' ? item[i].innerHTML = '' : null;
+    item[i].classList[1] == 'ArrowUp' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">▲</span><span class="caseUp hidden">▲</span></span><span class="eng"><span class="caseDown">▲</span><span class="caseUp hidden">▲</span></span>' : null;
+    item[i].classList[1] == 'ArrowDown' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">▼</span><span class="caseUp hidden">▼</span></span><span class="eng"><span class="caseDown">▼</span><span class="caseUp hidden">▼</span></span>' : null;
+    item[i].classList[1] == 'ArrowLeft' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">◄</span><span class="caseUp hidden">◄</span></span><span class="eng"><span class="caseDown">◄</span><span class="caseUp hidden">◄</span></span>' : null;
+    item[i].classList[1] == 'ArrowRight' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">►</span><span class="caseUp hidden">►</span></span><span class="eng"><span class="caseDown">►</span><span class="caseUp hidden">►</span></span>' : null;
+    item[i].classList[1] == 'AltRight' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">Alt</span><span class="caseUp hidden">Alt</span></span><span class="eng"><span class="caseDown">Alt</span><span class="caseUp hidden">Alt</span></span>' : null;
+    item[i].classList[1] == 'ControlLeft' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">Ctrl</span><span class="caseUp hidden">Ctrl</span></span><span class="eng"><span class="caseDown">Ctrl</span><span class="caseUp hidden">Ctrl</span></span>' : null;
+    item[i].classList[1] == 'ControlRight' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">Ctrl</span><span class="caseUp hidden">Ctrl</span></span><span class="eng"><span class="caseDown">Ctrl</span><span class="caseUp hidden">Ctrl</span></span>' : null;
+    item[i].classList[1] == 'Meta' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden">Win</span><span class="caseUp hidden">Win</span></span><span class="eng"><span class="caseDown">Win</span><span class="caseUp hidden">Win</span></span>' : null;
+    item[i].classList[1] == 'Space' ? item[i].innerHTML = '<span class="rus hidden"><span class="caseDown hidden"></span><span class="caseUp hidden"></span></span><span class="eng"><span class="caseDown"></span><span class="caseUp hidden"></span></span>' : null;
 }
 
 /* ОТРИСОВКА ТЕКСТА ИНФО О КЛАВИАТУРЕ */
